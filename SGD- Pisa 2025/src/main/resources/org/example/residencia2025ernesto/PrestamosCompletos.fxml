@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="809.0" prefWidth="1172.0" style="-fx-background-color: linear-gradient(to right, #4a90e2, #0059b3);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.residencia2025ernesto.PrestamosCompletos">
+    <children>
+        <VBox alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="743.0" prefWidth="1104.0" spacing="20" style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 30;">
+            <children>
+                <Label style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #0059b3;" text="Todos los prestamos completados" />
+                <TableView fx:id="tablaPrestamos" prefHeight="496.0" prefWidth="1066.0" style="-fx-background-radius: 10; -fx-border-radius: 10;                           -fx-border-color: #a3cfff; -fx-border-width: 1.5;">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="65.0" text="ID" />
+                        <TableColumn fx:id="colNombre" prefWidth="140.0" text="Invitado" />
+                        <TableColumn fx:id="colMotivo" prefWidth="271.0" text="Motivo" />
+                        <TableColumn fx:id="colCarpeta" prefWidth="115.0" text="Carpeta" />
+                        <TableColumn fx:id="colTipo" minWidth="0.0" prefWidth="70.0" text="Tipo" />
+                        <TableColumn fx:id="colUserCorreo" prefWidth="172.0" text="Correo" />
+                        <TableColumn fx:id="colFechaS" prefWidth="145.0" text="Fechas" />
+                        <TableColumn fx:id="colFechaR" prefWidth="145.0" text="FechaR" />
+                    </columns>
+                </TableView>
+                <Label fx:id="lblMensaje" style="-fx-text-fill: red;" />
+                <Button fx:id="btnVolver" onAction="#btnVolver" onMouseEntered="#restaurarBotonV" onMouseExited="#oscurecerBotonV" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-background-radius: 20;" text="Regresar" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

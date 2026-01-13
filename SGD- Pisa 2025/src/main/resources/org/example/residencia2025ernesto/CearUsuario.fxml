@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="851.0" prefWidth="1264.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.residencia2025ernesto.CrearUser">
+
+   <children>
+      <ImageView fitHeight="927.0" fitWidth="2009.0" layoutX="-425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="825.0" fitWidth="1163.0" layoutX="50.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Usuc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="379.0" layoutY="39.0" prefHeight="66.0" prefWidth="507.0" text="Crear una cuenta nueva" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="105.0" prefHeight="66.0" prefWidth="465.0" text="Recuerda que solo se le asigna  una cuenta nueva a un empleado ya registrado" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="981.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Pisa.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="413.0" layoutY="271.0" text="Firma Pisa del nuevo Usuario" textFill="#b2b1b1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NUserN" layoutX="413.0" layoutY="301.0" prefHeight="40.0" prefWidth="421.0" promptText="Firma Pisa" style="-fx-background-color: #dadada; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Label layoutX="413.0" layoutY="349.0" text="Contraseña del nuevo usuario" textFill="#b2b1b1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NUserPa" layoutX="413.0" layoutY="379.0" prefHeight="40.0" prefWidth="421.0" promptText="Contraseña de usario" style="-fx-background-color: #dadada; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="413.0" layoutY="436.0" text="Correo del nuevo usuaro" textFill="#b2b1b1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NUserC" layoutX="413.0" layoutY="466.0" prefHeight="40.0" prefWidth="421.0" promptText="Correo de usuario" style="-fx-background-color: #dadada; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="407.0" layoutY="521.0" text="Tipo de usuario" textFill="#b2b1b1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NUserT" layoutX="413.0" layoutY="551.0" prefHeight="40.0" prefWidth="421.0" promptText="Premium o invitaddo" style="-fx-background-color: #dadada; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="413.0" layoutY="612.0" text="Nombre Completo del nuevo usuario" textFill="#b2b1b1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NuserO" layoutX="413.0" layoutY="642.0" prefHeight="40.0" prefWidth="421.0" promptText="Nombre completo del nuevo Usuario" style="-fx-background-color: #dadada; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnREU" layoutX="506.0" layoutY="703.0" onAction="#btnREUOnAction" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="46.0" prefWidth="229.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Registrar Usuario" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVolver" layoutX="515.0" layoutY="757.0" onAction="#btnVolver" prefHeight="36.0" prefWidth="217.0" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-background-radius: 20;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

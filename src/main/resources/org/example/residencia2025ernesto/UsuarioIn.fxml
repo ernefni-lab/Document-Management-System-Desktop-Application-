@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="851.0" prefWidth="1243.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.residencia2025ernesto.UsuarioIn">
+
+   <children>
+      <ImageView fitHeight="851.0" fitWidth="1243.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/NuevoUserIN.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="135.0" prefHeight="83.0" prefWidth="393.0" text="Pedir Prestamo">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPisa" layoutX="106.0" layoutY="218.0" prefHeight="150.0" prefWidth="473.0" text="En PISA, entendemos la importancia de mantener un control seguro y responsable sobre la información. Solicitar el préstamo de carpetas se realiza bajo estrictas medidas de confidencialidad, asegurando que el acceso sea controlado, trazable y conforme a nuestros más altos estándares de calidad. Tu solicitud será gestionada con responsabilidad y compromiso." wrapText="true">
+         <font>
+            <Font size="15.5" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrest" layoutX="76.0" layoutY="380.0" onAction="#btnPrestOnAction" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="46.0" prefWidth="229.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Solicitar Prestamos" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="881.0" layoutY="455.0" prefHeight="83.0" prefWidth="315.0" text="Quieres hacer un reporte?">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPisa1" layoutX="852.0" layoutY="529.0" prefHeight="201.0" prefWidth="350.0" text="En PISA, fomentar la cultura del reporte responsable es clave para mantener la integridad del sistema. Tu participación activa al subir un informe sobre cualquier incidencia contribuye a una mejor organización, mayor seguridad y un seguimiento eficiente para la pronta solución de los problemas." wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRep" layoutX="930.0" layoutY="755.0" onAction="#btnRepOnAction" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="40" prefWidth="194.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Crear un reporte" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnJob" layoutX="142.0" layoutY="753.0" onAction="#btnJobOnAction" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="46.0" prefWidth="255.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Ir a mi nuevo trabajo" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblPisa11" layoutX="76.0" layoutY="671.0" prefHeight="83.0" prefWidth="414.0" text="¿Buscas una nueva oportunidad en otro puesto?, ¡Esta es tu oportunidad! visita nuestra pagina y descubre las vacantes que tenemos para ti" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="btnBCarp" layoutX="652.0" layoutY="14.0" onAction="#btnCarpOnAction" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="46.0" prefWidth="229.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Buscar Carpeta" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="BuscText" layoutX="95.0" layoutY="17.0" prefHeight="39.0" prefWidth="527.0" promptText="Buscar carpeta por nombre, código o área" style="-fx-background-color: #dadada; -fx-background-radius: 15;  -fx-border-radius: 15; -fx-border-color: #dadada; -fx-border-width: 1.5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <VBox fx:id="vboxRes" layoutX="95.0" layoutY="65.0" prefHeight="307.0" prefWidth="527.0" />
+      <Button fx:id="btnAuPrest" layoutX="318.0" layoutY="380.0" onAction="#AuPrestA" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="46.0" prefWidth="275.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Prestamos Autorizazdos" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="956.0" layoutY="101.0" prefHeight="150.0" prefWidth="315.0" text="Necesitas cambiar tu contraseña?" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRep1" layoutX="977.0" layoutY="365.0" onAction="#btncambiar" onMouseEntered="#oscurecerBoton" onMouseExited="#restaurarBoton" prefHeight="40" prefWidth="194.0" style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-background-radius: 20;" text="Cambiar" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblPisa12" layoutX="956.0" layoutY="187.0" prefHeight="201.0" prefWidth="235.0" text="Recuerda que si reinciaste tu contraseña debes cambiarla por seguridad, procura tener una que siempre recuerdes y no sea facil de conocer" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1011.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Pisa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
